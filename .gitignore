@@ -1,0 +1,13 @@
+venv-pywebview
+__pycache__
+gui
+.cache
+node_modules
+package-lock.json
+.idea
+.vscode
+dist
+build
+build-windows.spec
+build-macos.spec
+build-linux.spec
