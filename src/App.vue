@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <a target="_blank" href="http://www.zhangwenbing.com">Skip to author's blog</a>
+    <a target="_blank" href="http://www.zhangwenbing.com">go to author's blog</a>
     <br>
     <button @click="myBtn">Test</button>
   </div>
