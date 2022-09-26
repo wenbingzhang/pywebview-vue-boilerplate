@@ -47,7 +47,6 @@ module.exports = {
           "css-loader"
         ]
       },
-
       // * 解析Scss样式  注意： 配置的顺序是反着来的  从大到小 从右到左
       {
         test: /\.s[ca]ss$/,
