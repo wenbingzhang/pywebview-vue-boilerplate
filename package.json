@@ -11,9 +11,9 @@
     "clean": "run-script-os",
     "clean:default": "rm -rf dist 2>/dev/null; rm -rf gui 2>/dev/null; rm -rf build 2>/dev/null; ",
     "clean:windows": "if exist dist rd /S /Q dist & if exist build rd /S /Q build & if exist gui rd /S /Q gui",
-    "dev": "webpack serve",
-    "frontend:dev": "webpack --config webpack.config.js --mode development",
-    "frontend:prod": "webpack --config webpack.config.js --mode production",
+    "dev": "vite",
+    "frontend:dev": "vite build --mode development",
+    "frontend:prod": "vite build --mode production",
     "init": "npm install && run-script-os",
     "init:windows": "virtualenv -p python venv-pywebview && .\\venv-pywebview\\Scripts\\pip install -r requirements.txt",
     "init:linux": "virtualenv -p python3 venv-pywebview && if [[ -z \"${KDE_FULL_SESSION}\" ]]; then npm run init:qt5; else npm run init:gtk; fi",
@@ -31,22 +31,9 @@
     "vue": "^2.7.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.5",
-    "@babel/preset-env": "^7.16.11",
-    "babel-loader": "^8.2.3",
-    "clean-webpack-plugin": "^4.0.0",
-    "css-loader": "^6.6.0",
-    "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.5.0",
+    "@vitejs/plugin-vue2": "^2.0.0",
     "run-script-os": "^1.1.6",
-    "sass": "^1.49.8",
-    "sass-loader": "^12.6.0",
-    "style-loader": "^3.3.1",
-    "url-loader": "^4.1.1",
-    "vue-loader": "^15.10.0",
-    "vue-template-compiler": "^2.7.10",
-    "webpack": "^5.69.1",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4"
+    "vite": "^3.1.3",
+    "vite-plugin-singlefile": "^0.12.1"
   }
 }
