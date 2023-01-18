@@ -1,4 +1,4 @@
 setuptools
-pywebview
+pywebview==4.0
 pyinstaller
 tinyaes
