@@ -4,7 +4,7 @@
 import sys
 import os
 
-from src.pyapp.config.config import Config
+from src.pyapp import Config
 
 cfg = Config()
 cryptoKey = cfg.cryptoKey    # 对Python字节码加密
