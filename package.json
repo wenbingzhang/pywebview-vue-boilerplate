@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && python spec.py && npm run frontend:prod && run-script-os",
+    "build": "npm run clean && ./venv-pywebview/bin/python spec.py && npm run frontend:prod && run-script-os",
     "build:macos": "./venv-pywebview/bin/pyinstaller build-macos.spec",
     "build:windows": ".\\venv-pywebview\\Scripts\\pyinstaller build-windows.spec",
     "build:linux": "./venv-pywebview/bin/pyinstaller build-linux.spec --onefile",
