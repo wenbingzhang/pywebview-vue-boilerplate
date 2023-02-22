@@ -1,7 +1,9 @@
 import os
 import webview
 import webview.menu as wm
-from pyapp import JsApi, Menu, HotKey
+from pyapp.api import JsApi
+from pyapp.menu import Menu
+from pyapp.hotkey import HotKey
 
 
 def get_entrypoint():
