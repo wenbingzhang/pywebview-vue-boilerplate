@@ -1,6 +1,6 @@
 import webview
 import webview.menu as wm
-
+from os.path import expanduser
 
 class Menu:
     def click_me():
@@ -11,7 +11,7 @@ class Menu:
     def open_file_dialog():
         active_window = webview.active_window()
         active_window.create_file_dialog(
-            webview.SAVE_DIALOG, directory='/', save_filename='test.file')
+            webview.OPEN_DIALOG, directory=expanduser("~"))
 
     def change_active_window_content():
         active_window = webview.active_window()
