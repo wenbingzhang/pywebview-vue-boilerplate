@@ -21,8 +21,8 @@
     "init:qt5": "./venv/bin/pip install pyqt5 pyqtwebengine -r requirements.txt",
     "init:gtk": "sudo apt install libgirepository1.0-dev gcc libcairo2-dev pkg-config python3-dev gir1.2-gtk-3.0 && ./venv/bin/pip install pycairo pygobject -r requirements.txt",
     "start": "npm run clean && npm run frontend:dev && run-script-os",
-    "start:windows": ".\\venv\\Scripts\\python src\\index.py",
-    "start:default": "./venv/bin/python src/index.py"
+    "start:windows": ".\\venv\\Scripts\\python pyview\\index.py",
+    "start:default": "./venv/bin/python pyview/index.py"
   },
   "keywords": [],
   "author": "",

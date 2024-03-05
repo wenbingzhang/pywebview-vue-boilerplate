@@ -11,3 +11,4 @@ build
 build-windows.spec
 build-macos.spec
 build-linux.spec
+pyview/ui

@@ -4,7 +4,7 @@
 import sys
 import os
 
-from src.pyapp.config import Config
+from pyview.app.config import Config
 
 cfg = Config()
 cryptoKey = cfg.cryptoKey    # 对Python字节码加密
@@ -19,10 +19,10 @@ def common():
 block_cipher = pyi_crypto.PyiBlockCipher(key='{cryptoKey}')
 
 added_files = [
-    ('./gui', 'gui'),
+    ('./pyview/ui', 'ui'),
 ]
 
-a = Analysis(['./src/index.py'],
+a = Analysis(['./pyview/index.py'],
              pathex=['./dist'],
              binaries=None,
              datas=added_files,

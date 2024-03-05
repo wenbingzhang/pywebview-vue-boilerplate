@@ -2,6 +2,7 @@ import webview
 import webview.menu as wm
 from os.path import expanduser
 
+
 class Menu:
     def click_me():
         active_window = webview.active_window()

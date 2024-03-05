@@ -1,4 +1,4 @@
-setuptools==68.2.1
-pywebview==4.4
+setuptools==69.0.3
+pywebview==5.0.4
 pyinstaller==5.13.2
 tinyaes==1.0.4

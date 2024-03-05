@@ -1,23 +1,20 @@
 import os
 import webview
-import webview.menu as wm
-from pyapp.api import JsApi
-from pyapp.menu import Menu
-from pyapp.hotkey import HotKey
+# import webview.menu as wm
+from app.api import JsApi
+from app.menu import Menu
+from app.hotkey import HotKey
 
 
 def get_entrypoint():
     def exists(path):
         return os.path.exists(os.path.join(os.path.dirname(__file__), path))
 
-    if exists('../gui/index.html'):  # unfrozen development
-        return '../gui/index.html'
+    if exists('./ui/index.html'):  # unfrozen development
+        return './ui/index.html'
 
-    if exists('../Resources/gui/index.html'):  # macos
-        return '../Resources/gui/index.html'
-
-    if exists('./gui/index.html'):
-        return './gui/index.html'
+    if exists('./Resources/ui/index.html'):  # macos
+        return './Resources/ui/index.html'
 
     raise Exception('No index.html found')
 
